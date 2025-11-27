@@ -1,0 +1,313 @@
+body{
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: white;
+}
+
+header{
+    background-color: #353131;
+    padding: 15px;
+    text-align: center;
+    color: #ff0000;
+    font-weight: bold;
+    border-bottom: 2px solid #ff0000;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+
+header h1{
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+section.banner{
+    position: relative;
+    text-align: center;
+}
+
+section.banner img{
+    width: 100%;
+    max-height: 700px;
+    object-fit: cover;
+    display: block;
+}
+
+section.banner .welcome{
+    position: absolute;
+    top: 20%;
+    left: 85%;
+    transform: translate(-20%, -85%);
+    color: white;
+    text-shadow: 2px 2px 8px #3b3a3a;
+}
+
+section.banner .welcome span{
+    font-size: 2rem;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+nav.navigation{
+    background-color: #2b2323;
+    border-top: #ff0000 2px solid;
+    border-bottom: #ff0000 2px solid;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+}
+
+nav.navigation ul{
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 8px;
+    max-width: 1200px;
+}
+
+nav.navigation a{
+    display: flex;
+    text-decoration: none;
+    color: #7f60ef;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: rgb(81, 14, 54);
+    padding: 8px 7px;
+    transition: transform 0.5s;
+    box-shadow: 2px 2px 8px #000000;
+
+}
+
+nav.navigation a:hover{
+    
+    background-color: #ff0000;
+    color: white;
+    transform: translateY(-3px) scale(1.1);
+}
+
+main{
+    background-color: #000000;
+    padding: 15px 15%;
+}
+
+main article h2{
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+main article p{
+    line-height: 1.8;
+    color: #e0e0e0;
+    width: 750px;
+} 
+
+ul.tech-images{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 60px;
+    padding: 20px 0;
+}
+
+ul.tech-images li img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 13px;
+    border: #716565 2px solid;
+    box-shadow: 3px 3px 9px #000000;
+    transition: box-shadow 0.3s;
+    transition: transform 0.3s;
+}
+
+ul.tech-images li img:hover{
+transform: scale(1.05);
+}
+
+section.join-us{
+    background-color: #2b2323;
+    border-top: #ff0000 2px solid;
+    padding: 30px 15%;
+}
+
+section.join-us h2{
+    color: #ff0000;
+    margin-bottom: 15px;
+}
+
+section.join-us p{
+    color: #e0e0e0;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    width: 750px;
+}
+
+section.services-offered{
+    background-color: #000000;
+    padding: 30px 15%;
+    background-color: #2b2323;
+    line-height: 1.6;
+}
+
+section.services-offered h3{
+    color: #ff0000;
+    margin-bottom: 15px;
+}
+
+section.Insights{
+    background-color: #2b2323;
+    padding: 30px 15%;
+    border-bottom: #ff0000 2px solid;
+    line-height: 1.6;
+}
+
+section.Insights h3{
+    color: #ff0000;
+    margin-bottom: 15px;
+}
+
+section.contact-us{
+    background-color: #000000;
+    color: #817272;
+    padding: 30px 15%;
+    border-bottom: slategray 2px solid;
+}
+
+section.contact-us h3{
+    color: whitesmoke;
+    margin-bottom: 15px;
+}
+
+a:link {
+  color: #4DA6FF;
+
+}
+a:visited {
+  color: #9966CC;
+}
+
+a:hover {
+  color: #FF3333;
+}
+
+a:active {
+  color: brown;
+}
+
+.signup-form{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.signup-form input{
+    padding: 10px 15px;
+    border: white 2px solid;
+    border-radius: 8px;
+    margin-right: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.signup-form input:valid{
+    border: green 4px solid
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #ff0000, #cc0000);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid #ff0000;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255, 0, 0, 0.3);
+    text-align: center;
+    margin: 20px 0;
+}
+
+.contact-button:hover {
+    background: linear-gradient(135deg, #cc0000, #990000);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+    color: white;
+}
+
+.contact-button:active {
+    transform: translateY(-1px);
+}
+
+.cta-container {
+    text-align: center;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+footer{
+    background-color: #353131;
+    text-align: center;
+    padding: 5px 8px;
+    border-top: #ff0000 2px solid;
+}
+
+footer p{
+    color: white;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+  main article p,
+  section.join-us p {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  ul.tech-images {
+    gap: 20px;
+  }
+
+  .signup-form input[type="email"],
+  .submit-button {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section.banner .welcome h2 {
+  animation: fadeInUp 1s ease-out;
+}
+
+.signup-form input[type="email"]:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ff0000;
+}
